@@ -1,0 +1,55 @@
+🎉 MOMANTO - SETUP GUIDE
+========================
+
+STEP 1: INSTALL
+---------------
+npm install
+npm install sqlite3 --save
+
+STEP 2: CONFIGURE
+-----------------
+1. Copy .env.example to .env
+2. Get Telegram Bot Token from @BotFather
+3. Add token to .env file:
+   TELEGRAM_BOT_TOKEN=your_token_here
+
+STEP 3: RUN
+-----------
+Terminal 1: npm run server
+Terminal 2: npm run dev
+
+OR run both: npm run dev:all
+
+STEP 4: ACCESS
+--------------
+User Site: http://localhost:3000
+Planner Login: http://localhost:3000/planner/login
+
+LOGIN CREDENTIALS (Any of these):
+==================================
+Email: planner1@momanto.in
+Password: Plan@123
+
+Email: planner2@momanto.in  
+Password: Plan@123
+
+(See README.md for all 20 accounts)
+
+STEP 5: TEST FLOW
+-----------------
+1. Login as planner
+2. Create a package
+3. Open homepage in another browser
+4. Book the package
+5. Check Telegram for notification!
+
+TELEGRAM SETUP
+==============
+1. Create bot with @BotFather
+2. Get bot token
+3. Have each planner message your bot
+4. Get their chat_id from /getUpdates
+5. Update backend/config/planners.js
+6. Restart server
+
+That's it! You're ready to go! 🚀
